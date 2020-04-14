@@ -5,6 +5,10 @@ import java.net.URLDecoder;
 
 public class URL {
 
+	/**
+	 * @param Metodo para decodificar string na url pois o padrao JS codifica as strings passadas
+	 * @return
+	 */
 	public static String decodeParam(String text)
 	{
 		try {

@@ -28,6 +28,10 @@ public class PostResource {
 		return ResponseEntity.ok().body(post);
 	}
 	
+	/**
+	 * @param value = text significa que vai peagr o valor do text, caso text nao exista vai enviar ""
+	 * @return
+	 */
 	@GetMapping(value = "/titlesearch")
 	public ResponseEntity<List<Post>> findByTitle(@RequestParam(value = "text",defaultValue = "") String text)
 	{
